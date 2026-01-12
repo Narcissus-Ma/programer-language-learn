@@ -1,16 +1,16 @@
 export default {
   title: 'Code Examples Docs',
   description: '多语言编程示例文档',
-  base: '/programer-language-learn/', // GitHub Pages部署路径
+  base: '/programer-language-learn/',
   ignoreDeadLinks: true,
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: 'JavaScript', link: '/comparisons/js-overview' },
-      { text: 'Python', link: '/comparisons/python-overview' },
-      { text: 'Java', link: '/comparisons/java-overview' },
-      { text: 'SQL', link: '/comparisons/sql-overview' },
-      { text: '对比', link: '/comparisons/' }
+      { text: 'Html/Css', link: '/navigation/html-css' },
+      { text: 'JavaScript', link: '/navigation/javascript' },
+      { text: 'Python', link: '/navigation/python' },
+      { text: 'Java', link: '/navigation/java' },
+      { text: 'SQL', link: '/navigation/sql' },
     ],
     sidebar: {
       '/comparisons/': [
@@ -48,7 +48,7 @@ export default {
       }
     },
     socialLinks: [
-      { icon: 'github', link: 'https://gitee.com/Narcissus-ma/programer-language-learn' }
+      { icon: 'github', link: 'https://github.com/Narcissus-Ma/programer-language-learn' }
     ]
   }
 }
