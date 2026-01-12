@@ -24,6 +24,7 @@ docs/.vitepress/dist/
 *.njsproj
 *.sln
 *.sw?
+.trae/
 
 # Environment variables
 .env
