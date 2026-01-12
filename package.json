@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/Narcissus-ma/programer-language-learn.git"
+    "url": "https://github.com/Narcissus-Ma/programer-language-learn.git"
   },
   "keywords": [],
   "author": "",
@@ -25,5 +25,8 @@
   "dependencies": {
     "shiki": "^0.14.7",
     "vitepress": "^1.6.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
