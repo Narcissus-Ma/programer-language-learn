@@ -1,0 +1,29 @@
+{
+  "name": "programer-language-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "generate:docs": "node scripts/generate-docs.js",
+    "validate:code": "node scripts/validate-code.js",
+    "deploy": "bash deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/Narcissus-ma/programer-language-learn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "shiki": "^0.14.7",
+    "vitepress": "^1.6.4"
+  }
+}
