@@ -402,21 +402,39 @@ function updateSidebarConfig() {
     
     // 如果有新的侧边栏内容，更新配置文件
     if (newSidebarContent) {
-      // 查找sidebar部分的位置
-      const sidebarRegex = /sidebar:\s*\{[\s\S]*?\},/;
+      // 查找sidebar部分的位置 - 使用更可靠的方式匹配整个sidebar对象
+      // 匹配从sidebar: { 开始，直到themeConfig中sidebar部分结束的位置
+      const sidebarRegex = /sidebar:\s*\{([\s\S]*?)\s*\}\s*,\s*\n\s*\},?/;
       const match = configContent.match(sidebarRegex);
       
       if (match) {
         const existingSidebar = match[0];
+        const sidebarContent = match[1];
         
-        // 移除practice相关的旧配置
-        let cleanedSidebar = existingSidebar.replace(/\s*"\/navigation\/practice\/.*?\/":\s*\[[\s\S]*?\],?/g, '');
+        // 1. 首先提取非practice的配置
+        const nonPracticeConfig = sidebarContent.replace(/\s*"\/navigation\/practice\/[^"\n]+\/":\s*\[[\s\S]*?\n\s*\],?/g, '');
         
-        // 添加新的practice配置
-        const updatedSidebar = cleanedSidebar.replace(/sidebar:\s*\{/, `sidebar: {\n${newSidebarContent}`);
+        // 2. 确保没有多余的逗号
+        let cleanedSidebarContent = nonPracticeConfig.replace(/,\s*$/g, '');
         
-        // 更新配置文件内容
-        const newConfigContent = configContent.replace(existingSidebar, updatedSidebar);
+        // 3. 构建新的sidebar内容
+        let newSidebarContentFull = 'sidebar: {';
+        
+        if (cleanedSidebarContent.trim()) {
+          newSidebarContentFull += `\n${cleanedSidebarContent}`;
+          if (newSidebarContent) {
+            newSidebarContentFull += ',';
+          }
+        }
+        
+        if (newSidebarContent) {
+          newSidebarContentFull += `\n${newSidebarContent}`;
+        }
+        
+        newSidebarContentFull += '\n  }\n  }';
+        
+        // 4. 更新配置文件内容
+        const newConfigContent = configContent.replace(existingSidebar, newSidebarContentFull);
         
         // 写入配置文件
         fs.writeFileSync(configPath, newConfigContent, 'utf8');

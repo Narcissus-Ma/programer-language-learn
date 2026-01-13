@@ -1,6 +1,6 @@
 # 目录
 
-- [检查两个字符串是否是变位词（字母重新排列后形成的新单词）](anagram.md)
+- [检查两个字符串是否是变位词](anagram.md)
 - [合并多个字符串](combined-string.md)
 - [获取字符串的所有前缀](get-all-prefixs.md)
 - [检查一个字符串是否是数字](is-number.md)
