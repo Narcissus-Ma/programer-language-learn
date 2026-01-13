@@ -349,21 +349,30 @@ function main() {
 
 // 更新侧边栏配置
 function updateSidebarConfig() {
-  const configPath = path.join(__dirname, '../docs/.vitepress/config.js');
+  const sidebarConfigPath = path.join(__dirname, '../docs/.vitepress/configs/sidebar-configs.json');
   
   try {
-    // 读取配置文件
-    let configContent = fs.readFileSync(configPath, 'utf8');
+    // 读取现有的侧边栏配置
+    let sidebarConfig = {};
+    if (fs.existsSync(sidebarConfigPath)) {
+      const configContent = fs.readFileSync(sidebarConfigPath, 'utf8');
+      sidebarConfig = JSON.parse(configContent);
+    }
     
-    // 生成侧边栏配置内容
-    let newSidebarContent = '';
-    
-    // 扫描navigation/practice目录下的所有子目录
+    // 生成新的practice相关的侧边栏配置
     const practiceDir = path.join(OUTPUT_DIR, 'navigation', 'practice');
     if (fs.existsSync(practiceDir)) {
       const practiceSubdirs = fs.readdirSync(practiceDir).filter(file => {
         const filePath = path.join(practiceDir, file);
         return fs.statSync(filePath).isDirectory();
+      });
+      
+      // 清理旧的practice相关配置
+      const keysToRemove = Object.keys(sidebarConfig).filter(key => 
+        key.startsWith('/navigation/practice/')
+      );
+      keysToRemove.forEach(key => {
+        delete sidebarConfig[key];
       });
       
       practiceSubdirs.forEach(subdir => {
@@ -393,54 +402,14 @@ function updateSidebarConfig() {
         
         // 如果有文档，添加到侧边栏配置
         if (sidebarItems.length > 0) {
-          const itemsString = JSON.stringify(sidebarItems, null, 4).replace(/\n/g, '\n      ');
-          newSidebarContent += `      "${sidebarKey}/": ${itemsString},
-`;
+          sidebarConfig[`${sidebarKey}/`] = sidebarItems;
         }
       });
     }
     
-    // 如果有新的侧边栏内容，更新配置文件
-    if (newSidebarContent) {
-      // 查找sidebar部分的位置 - 使用更可靠的方式匹配整个sidebar对象
-      // 匹配从sidebar: { 开始，直到themeConfig中sidebar部分结束的位置
-      const sidebarRegex = /sidebar:\s*\{([\s\S]*?)\s*\}\s*,\s*\n\s*\},?/;
-      const match = configContent.match(sidebarRegex);
-      
-      if (match) {
-        const existingSidebar = match[0];
-        const sidebarContent = match[1];
-        
-        // 1. 首先提取非practice的配置
-        const nonPracticeConfig = sidebarContent.replace(/\s*"\/navigation\/practice\/[^"\n]+\/":\s*\[[\s\S]*?\n\s*\],?/g, '');
-        
-        // 2. 确保没有多余的逗号
-        let cleanedSidebarContent = nonPracticeConfig.replace(/,\s*$/g, '');
-        
-        // 3. 构建新的sidebar内容
-        let newSidebarContentFull = 'sidebar: {';
-        
-        if (cleanedSidebarContent.trim()) {
-          newSidebarContentFull += `\n${cleanedSidebarContent}`;
-          if (newSidebarContent) {
-            newSidebarContentFull += ',';
-          }
-        }
-        
-        if (newSidebarContent) {
-          newSidebarContentFull += `\n${newSidebarContent}`;
-        }
-        
-        newSidebarContentFull += '\n  }\n  }';
-        
-        // 4. 更新配置文件内容
-        const newConfigContent = configContent.replace(existingSidebar, newSidebarContentFull);
-        
-        // 写入配置文件
-        fs.writeFileSync(configPath, newConfigContent, 'utf8');
-        console.log('✓ 更新侧边栏配置: ' + configPath);
-      }
-    }
+    // 写入侧边栏配置文件
+    fs.writeFileSync(sidebarConfigPath, JSON.stringify(sidebarConfig, null, 2), 'utf8');
+    console.log('✓ 更新侧边栏配置: ' + sidebarConfigPath);
     
   } catch (error) {
     console.error('❌ 更新侧边栏配置失败:', error.message);

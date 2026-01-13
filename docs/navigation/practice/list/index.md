@@ -1,7 +1,7 @@
 # 目录
 
 - [list相关方法](arr.md)
-- [clone列表](clone- list.md)
+- [clone列表](clone-list.md)
 - [list的map与filter方法](filter-map.md)
 - [列表去重](find-duplicates.md)
 - [查找元素是否在列表中](find-ele.md)
