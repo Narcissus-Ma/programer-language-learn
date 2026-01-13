@@ -28,6 +28,7 @@ export default {
       { text: "SQL", link: "/navigation/sql" },
       { text: "practice", link: "/navigation/practice" },
       { text: "algorithms", link: "/navigation/algorithms" },
+      { text: "other", link: "/navigation/other" },
     ],
     sidebar: sidebarConfig,
     search: {
