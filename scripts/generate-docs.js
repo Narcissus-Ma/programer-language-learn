@@ -347,5 +347,140 @@ function main() {
   console.log("✅ 文档生成完成！");
 }
 
+// 更新侧边栏配置
+function updateSidebarConfig() {
+  const configPath = path.join(__dirname, '../docs/.vitepress/config.js');
+  
+  try {
+    // 读取配置文件
+    let configContent = fs.readFileSync(configPath, 'utf8');
+    
+    // 生成侧边栏配置内容
+    let newSidebarContent = '';
+    
+    // 扫描navigation/practice目录下的所有子目录
+    const practiceDir = path.join(OUTPUT_DIR, 'navigation', 'practice');
+    if (fs.existsSync(practiceDir)) {
+      const practiceSubdirs = fs.readdirSync(practiceDir).filter(file => {
+        const filePath = path.join(practiceDir, file);
+        return fs.statSync(filePath).isDirectory();
+      });
+      
+      practiceSubdirs.forEach(subdir => {
+        const subdirPath = path.join(practiceDir, subdir);
+        const sidebarKey = `/navigation/practice/${subdir}`;
+        const sidebarItems = [];
+        
+        // 读取该目录下的index.md文件获取文档列表
+        const indexPath = path.join(subdirPath, 'index.md');
+        if (fs.existsSync(indexPath)) {
+          const indexContent = fs.readFileSync(indexPath, 'utf8');
+          
+          // 匹配所有文档链接
+          const linkMatches = indexContent.matchAll(/\-\s+\[(.*?)\]\((.*?)\)/g);
+          
+          for (const match of linkMatches) {
+            if (match[1] && match[2]) {
+              // 移除.md扩展名
+              const link = match[2].replace('.md', '');
+              sidebarItems.push({
+                text: match[1],
+                link: `/navigation/practice/${subdir}/${link}`
+              });
+            }
+          }
+        }
+        
+        // 如果有文档，添加到侧边栏配置
+        if (sidebarItems.length > 0) {
+          const itemsString = JSON.stringify(sidebarItems, null, 4).replace(/\n/g, '\n      ');
+          newSidebarContent += `      "${sidebarKey}/": ${itemsString},
+`;
+        }
+      });
+    }
+    
+    // 如果有新的侧边栏内容，更新配置文件
+    if (newSidebarContent) {
+      // 查找sidebar部分的位置
+      const sidebarRegex = /sidebar:\s*\{[\s\S]*?\},/;
+      const match = configContent.match(sidebarRegex);
+      
+      if (match) {
+        const existingSidebar = match[0];
+        
+        // 移除practice相关的旧配置
+        let cleanedSidebar = existingSidebar.replace(/\s*"\/navigation\/practice\/.*?\/":\s*\[[\s\S]*?\],?/g, '');
+        
+        // 添加新的practice配置
+        const updatedSidebar = cleanedSidebar.replace(/sidebar:\s*\{/, `sidebar: {\n${newSidebarContent}`);
+        
+        // 更新配置文件内容
+        const newConfigContent = configContent.replace(existingSidebar, updatedSidebar);
+        
+        // 写入配置文件
+        fs.writeFileSync(configPath, newConfigContent, 'utf8');
+        console.log('✓ 更新侧边栏配置: ' + configPath);
+      }
+    }
+    
+  } catch (error) {
+    console.error('❌ 更新侧边栏配置失败:', error.message);
+  }
+}
+
+// 主函数
+function main() {
+  console.log('🔄 开始生成文档...');
+
+  // 获取所有代码文件
+  const allFiles = [];
+
+  // 扫描examples目录
+  if (fs.existsSync(EXAMPLES_DIR)) {
+    const examplesFiles = getAllFiles(EXAMPLES_DIR);
+    allFiles.push(
+      ...examplesFiles.filter(
+        (file) => !file.endsWith('.md') && !path.basename(file).startsWith('.')
+      )
+    );
+  }
+
+  // 扫描navigation目录
+  if (fs.existsSync(NAVIGATION_DIR)) {
+    const navigationFiles = getAllFiles(NAVIGATION_DIR);
+    allFiles.push(
+      ...navigationFiles.filter(
+        (file) => !file.endsWith('.md') && !path.basename(file).startsWith('.')
+      )
+    );
+  }
+
+  // 按目录和基名分组文件
+  const groupedFiles = groupFilesByBaseName(allFiles);
+
+  // 为每个分组生成文档并更新索引
+  for (const [groupPath, baseNameGroups] of Object.entries(groupedFiles)) {
+    const documents = [];
+
+    for (const [baseName, files] of Object.entries(baseNameGroups)) {
+      // 生成文档
+      const docInfo = generateMarkdown(groupPath, baseName, files);
+      documents.push(docInfo);
+    }
+
+    // 更新目录索引
+    updateIndexFile(groupPath, documents);
+  }
+
+  // 生成所有目录的索引文件
+  generateDirectoryIndexes();
+  
+  // 更新侧边栏配置
+  updateSidebarConfig();
+
+  console.log('✅ 文档生成完成！');
+}
+
 // 执行主函数
 main();

@@ -1,6 +1,5 @@
 # 目录
 
-- [检查两个字符串是否是变位词（字母重新排列后形成的新单词）](anagram.md)
 - [armstrong num](armstrong-num.md)
 - [计算阶乘](factorial.md)
 - [查找一个数的所有因子](find-factors.md)
