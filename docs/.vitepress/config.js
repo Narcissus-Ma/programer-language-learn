@@ -11,6 +11,7 @@ export default {
       { text: 'Python', link: '/navigation/python' },
       { text: 'Java', link: '/navigation/java' },
       { text: 'SQL', link: '/navigation/sql' },
+      {text: 'practice', link: '/navigation/practice'}
     ],
     sidebar: {
       '/comparisons/': [
