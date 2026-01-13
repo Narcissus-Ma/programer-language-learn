@@ -1,11 +1,11 @@
 # 数组遍历
 
-## JavaScript 数组遍历示例
+## JavaScript 示例
 
 以下是JavaScript中数组遍历的示例代码：
 
 ```js
-// 数组遍历示例
+// title: 数组遍历
 // 1. for循环遍历
 const arr = [1, 2, 3, 4, 5];
 for (let i = 0; i < arr.length; i++) {
@@ -45,7 +45,7 @@ console.log('是否所有元素都是正数:', allPositive);
 
 ## 说明
 
-该示例展示了JavaScript中数组遍历的基本用法和常见操作。
+该示例展示了不同语言中数组遍历的基本用法和常见操作。
 
 ### 主要功能
 
@@ -57,5 +57,4 @@ console.log('是否所有元素都是正数:', allPositive);
 
 ## 相关链接
 
-- [返回首页](../../index.md)
-- [语言对比](../../comparisons/)
+- [返回首页](../index.md)

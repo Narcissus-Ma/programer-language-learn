@@ -1,11 +1,11 @@
 # 异步编程
 
-## JavaScript 异步编程示例
+## JavaScript 示例
 
 以下是JavaScript中异步编程的示例代码：
 
 ```js
-// 异步编程示例（async/await）
+// title: 异步编程
 
 // 模拟API请求函数
 function fetchData(url, delay = 1000) {
@@ -111,7 +111,7 @@ runAllExamples();
 
 ## 说明
 
-该示例展示了JavaScript中异步编程的基本用法和常见操作。
+该示例展示了不同语言中异步编程的基本用法和常见操作。
 
 ### 主要功能
 
@@ -123,5 +123,4 @@ runAllExamples();
 
 ## 相关链接
 
-- [返回首页](../../index.md)
-- [语言对比](../../comparisons/)
+- [返回首页](../index.md)

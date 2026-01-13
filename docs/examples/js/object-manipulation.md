@@ -1,11 +1,11 @@
-# 对象处理
+# 对象操作
 
-## JavaScript 对象处理示例
+## JavaScript 示例
 
-以下是JavaScript中对象处理的示例代码：
+以下是JavaScript中对象操作的示例代码：
 
 ```js
-// 对象操作示例
+// title: 对象操作
 // 1. 创建对象
 const user = {
   name: '张三',
@@ -74,7 +74,7 @@ console.log('\n合并后的对象:', mergedUser);
 
 ## 说明
 
-该示例展示了JavaScript中对象处理的基本用法和常见操作。
+该示例展示了不同语言中对象操作的基本用法和常见操作。
 
 ### 主要功能
 
@@ -86,5 +86,4 @@ console.log('\n合并后的对象:', mergedUser);
 
 ## 相关链接
 
-- [返回首页](../../index.md)
-- [语言对比](../../comparisons/)
+- [返回首页](../index.md)

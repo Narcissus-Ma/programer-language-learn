@@ -1,4 +1,4 @@
-// 异步编程示例（async/await）
+// title: 异步编程
 
 // 模拟API请求函数
 function fetchData(url, delay = 1000) {

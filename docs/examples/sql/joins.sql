@@ -1,4 +1,4 @@
--- 连接查询示例
+-- title: 连接查询
 -- 假设我们有以下两个表：
 -- users (id, name, department_id)
 -- departments (id, name, location)

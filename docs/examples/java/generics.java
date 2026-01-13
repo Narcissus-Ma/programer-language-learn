@@ -1,4 +1,4 @@
-// 泛型示例
+// title: 泛型
 public class GenericsExample {
     public static void main(String[] args) {
         // 1. 泛型类示例

@@ -1,11 +1,11 @@
 # 文件操作
 
-## Python 文件操作示例
+## Python 示例
 
 以下是Python中文件操作的示例代码：
 
 ```py
-# 文件操作示例
+# title: 文件操作
 # 1. 写入文件
 # 1.1 使用write()方法写入单行
 with open('example.txt', 'w', encoding='utf-8') as f:
@@ -102,7 +102,7 @@ with open('user.json', 'r', encoding='utf-8') as f:
 
 ## 说明
 
-该示例展示了Python中文件操作的基本用法和常见操作。
+该示例展示了不同语言中文件操作的基本用法和常见操作。
 
 ### 主要功能
 
@@ -114,5 +114,4 @@ with open('user.json', 'r', encoding='utf-8') as f:
 
 ## 相关链接
 
-- [返回首页](../../index.md)
-- [语言对比](../../comparisons/)
+- [返回首页](../index.md)

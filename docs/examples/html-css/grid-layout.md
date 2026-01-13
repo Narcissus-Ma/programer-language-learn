@@ -1,13 +1,14 @@
-# Grid布局
+# grid layout
 
-## HTML/CSS Grid布局示例
+## HTML/CSS 示例
 
-以下是HTML/CSS中Grid布局的示例代码：
+以下是HTML/CSS中grid layout的示例代码：
 
 ```html
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <!-- title: Grid布局 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid布局示例</title>
@@ -326,7 +327,7 @@
 
 ## 说明
 
-该示例展示了HTML/CSS中Grid布局的基本用法和常见操作。
+该示例展示了不同语言中grid layout的基本用法和常见操作。
 
 ### 主要功能
 
@@ -338,5 +339,4 @@
 
 ## 相关链接
 
-- [返回首页](../../index.md)
-- [语言对比](../../comparisons/)
+- [返回首页](../index.md)

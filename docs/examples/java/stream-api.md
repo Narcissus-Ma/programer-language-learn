@@ -1,11 +1,11 @@
 # Stream API
 
-## Java Stream API示例
+## Java 示例
 
 以下是Java中Stream API的示例代码：
 
 ```java
-// Stream API示例
+// title: Stream API
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -151,7 +151,7 @@ public class StreamApiExample {
 
 ## 说明
 
-该示例展示了Java中Stream API的基本用法和常见操作。
+该示例展示了不同语言中Stream API的基本用法和常见操作。
 
 ### 主要功能
 
@@ -163,5 +163,4 @@ public class StreamApiExample {
 
 ## 相关链接
 
-- [返回首页](../../index.md)
-- [语言对比](../../comparisons/)
+- [返回首页](../index.md)

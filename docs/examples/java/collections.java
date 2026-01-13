@@ -1,4 +1,4 @@
-// 集合框架示例
+// title: 集合框架
 import java.util.*;
 import java.util.stream.Collectors;
 

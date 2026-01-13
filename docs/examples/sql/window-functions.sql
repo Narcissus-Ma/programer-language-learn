@@ -1,4 +1,4 @@
--- 窗口函数示例
+-- title: 窗口函数
 -- 假设我们有一个orders表：orders (id, user_id, product_id, amount, order_date)
 
 -- 1. 基本窗口函数

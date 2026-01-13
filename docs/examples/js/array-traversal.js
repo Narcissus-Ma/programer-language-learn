@@ -1,4 +1,4 @@
-// 数组遍历示例
+// title: 数组遍历
 // 1. for循环遍历
 const arr = [1, 2, 3, 4, 5];
 for (let i = 0; i < arr.length; i++) {

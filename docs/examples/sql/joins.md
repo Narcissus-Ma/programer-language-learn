@@ -1,11 +1,11 @@
 # 连接查询
 
-## SQL 连接查询示例
+## SQL 示例
 
 以下是SQL中连接查询的示例代码：
 
 ```sql
--- 连接查询示例
+-- title: 连接查询
 -- 假设我们有以下两个表：
 -- users (id, name, department_id)
 -- departments (id, name, location)
@@ -73,7 +73,7 @@ ORDER BY user_count DESC;
 
 ## 说明
 
-该示例展示了SQL中连接查询的基本用法和常见操作。
+该示例展示了不同语言中连接查询的基本用法和常见操作。
 
 ### 主要功能
 
@@ -85,5 +85,4 @@ ORDER BY user_count DESC;
 
 ## 相关链接
 
-- [返回首页](../../index.md)
-- [语言对比](../../comparisons/)
+- [返回首页](../index.md)

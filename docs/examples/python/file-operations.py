@@ -1,4 +1,4 @@
-# 文件操作示例
+# title: 文件操作
 # 1. 写入文件
 # 1.1 使用write()方法写入单行
 with open('example.txt', 'w', encoding='utf-8') as f:

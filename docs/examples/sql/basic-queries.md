@@ -1,11 +1,11 @@
 # 基础查询
 
-## SQL 基础查询示例
+## SQL 示例
 
 以下是SQL中基础查询的示例代码：
 
 ```sql
--- 基础查询示例
+-- title: 基础查询
 -- 1. 选择所有列
 SELECT * FROM users;
 
@@ -58,7 +58,7 @@ SELECT MAX(age) AS max_age, MIN(age) AS min_age FROM users; -- 最大值和最�
 
 ## 说明
 
-该示例展示了SQL中基础查询的基本用法和常见操作。
+该示例展示了不同语言中基础查询的基本用法和常见操作。
 
 ### 主要功能
 
@@ -70,5 +70,4 @@ SELECT MAX(age) AS max_age, MIN(age) AS min_age FROM users; -- 最大值和最�
 
 ## 相关链接
 
-- [返回首页](../../index.md)
-- [语言对比](../../comparisons/)
+- [返回首页](../index.md)

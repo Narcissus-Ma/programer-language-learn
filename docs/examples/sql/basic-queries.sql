@@ -1,4 +1,4 @@
--- 基础查询示例
+-- title: 基础查询
 -- 1. 选择所有列
 SELECT * FROM users;
 

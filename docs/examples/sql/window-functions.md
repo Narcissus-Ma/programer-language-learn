@@ -1,11 +1,11 @@
 # 窗口函数
 
-## SQL 窗口函数示例
+## SQL 示例
 
 以下是SQL中窗口函数的示例代码：
 
 ```sql
--- 窗口函数示例
+-- title: 窗口函数
 -- 假设我们有一个orders表：orders (id, user_id, product_id, amount, order_date)
 
 -- 1. 基本窗口函数
@@ -114,7 +114,7 @@ WHERE row_num = 1;
 
 ## 说明
 
-该示例展示了SQL中窗口函数的基本用法和常见操作。
+该示例展示了不同语言中窗口函数的基本用法和常见操作。
 
 ### 主要功能
 
@@ -126,5 +126,4 @@ WHERE row_num = 1;
 
 ## 相关链接
 
-- [返回首页](../../index.md)
-- [语言对比](../../comparisons/)
+- [返回首页](../index.md)

@@ -1,13 +1,14 @@
-# Flexbox布局
+# flexbox
 
-## HTML/CSS Flexbox布局示例
+## HTML/CSS 示例
 
-以下是HTML/CSS中Flexbox布局的示例代码：
+以下是HTML/CSS中flexbox的示例代码：
 
 ```html
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <!-- title: Flexbox布局 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox布局示例</title>
@@ -249,7 +250,7 @@
 
 ## 说明
 
-该示例展示了HTML/CSS中Flexbox布局的基本用法和常见操作。
+该示例展示了不同语言中flexbox的基本用法和常见操作。
 
 ### 主要功能
 
@@ -261,5 +262,4 @@
 
 ## 相关链接
 
-- [返回首页](../../index.md)
-- [语言对比](../../comparisons/)
+- [返回首页](../index.md)
