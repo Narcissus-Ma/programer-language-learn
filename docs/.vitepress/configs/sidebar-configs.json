@@ -23,6 +23,30 @@
       "link": "/examples/js/object-manipulation"
     }
   ],
+  "/navigation/html-css/basic/": [
+    {
+      "text": "test",
+      "link": "/navigation/html-css/basic/test"
+    }
+  ],
+  "/navigation/javascript/basic/": [
+    {
+      "text": "js测试",
+      "link": "/navigation/javascript/basic/test"
+    }
+  ],
+  "/navigation/python/basic/": [
+    {
+      "text": "测试",
+      "link": "/navigation/python/basic/test"
+    }
+  ],
+  "/navigation/java/basic/": [
+    {
+      "text": "java测试",
+      "link": "/navigation/java/basic/test"
+    }
+  ],
   "/navigation/practice/class/": [
     {
       "text": "简单存款系统",
@@ -213,6 +237,18 @@
     {
       "text": "从字符串中提取URL",
       "link": "/navigation/practice/utils/url-filter"
+    }
+  ],
+  "/navigation/algorithms/basic/": [
+    {
+      "text": "测试",
+      "link": "/navigation/algorithms/basic/test"
+    }
+  ],
+  "/navigation/other/mixins/": [
+    {
+      "text": "mixins",
+      "link": "/navigation/other/mixins/test"
     }
   ]
 }

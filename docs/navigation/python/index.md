@@ -1,1 +1,3 @@
-# todo: python 导航
+# 目录
+
+- [basic](basic/index.md)
