@@ -413,7 +413,7 @@ function updateSidebarConfig() {
         });
       }
     };
-    const navigationConfigs = ['html-css','javascript', 'python','java','sql','practice','algorithms','other'];
+    const navigationConfigs = ['html-css','javascript', 'python','java','sql','practice','algorithms'];
 
     navigationConfigs.forEach(i => sideBarGenerate(i));
 
@@ -484,4 +484,3 @@ function main() {
 
 // 执行主函数
 main();
-// updateSidebarConfig();

@@ -1,0 +1,82 @@
+# 矩形 -->
+
+## HTML/CSS 示例
+
+以下是HTML/CSS中矩形 -->的示例代码：
+
+```html
+<!-- title: 矩形 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+    <style>
+      .canvas {
+        border: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas width="500" height="500" class="canvas">
+      您的浏览器不支持canvas,请升级
+    </canvas>
+    <script>
+      const cvs = document.querySelector(".canvas");
+      const cxt = cvs.getContext("2d");
+
+      /*
+      rect(x坐标，y坐标，宽，高)
+      fillRect 绘制一个填充的矩形
+      strokeRect 绘制一个描边的矩形
+      */
+      // cxt.rect(0, 0, 50, 50);
+      // cxt.stroke(); // 描边
+      // cxt.fillStyle = "blue";
+      // cxt.fill(); // 填充
+
+      const gap = 50;
+      const horizontalNum = Math.floor(cvs.width / gap);
+      const verticalNum = Math.floor(cvs.height / gap);
+
+      for (let i = 0; i < horizontalNum; i++) {
+        for (let j = 0; j < verticalNum; j++) {
+          if (j % 2 === 0) {
+            if (i % 2 === 0) {
+              cxt.fillStyle = "black";
+            } else {
+              cxt.fillStyle = "blue";
+            }
+          } else {
+            if (i % 2 === 0) {
+              cxt.fillStyle = "blue";
+            } else {
+              cxt.fillStyle = "black";
+            }
+          }
+          cxt.fillRect(i * gap, j * gap, gap, gap);
+        }
+      }
+    </script>
+  </body>
+</html>
+
+```
+
+## 说明
+
+该示例展示了不同语言中矩形 -->的基本用法和常见操作。
+
+### 主要功能
+
+- 请根据实际代码内容添加功能说明
+
+### 使用场景
+
+- 请根据实际代码内容添加使用场景
+
+## 相关链接
+
+- [返回首页](../index.md)

@@ -23,6 +23,12 @@
       "link": "/examples/js/object-manipulation"
     }
   ],
+  "/navigation/other/mixins/": [
+    {
+      "text": "mixins",
+      "link": "/navigation/other/mixins/test"
+    }
+  ],
   "/navigation/html-css/Animation/": [
     {
       "text": "animation 实现loading效果 -->",
@@ -93,10 +99,138 @@
       "link": "/navigation/html-css/viewScroll/method2"
     }
   ],
-  "/navigation/javascript/basic/": [
+  "/navigation/javascript/animation/": [
     {
-      "text": "js测试",
-      "link": "/navigation/javascript/basic/test"
+      "text": "动画实现方式一：CSS 动画 -->",
+      "link": "/navigation/javascript/animation/animationByCss"
+    },
+    {
+      "text": "动画实现方式二：requestAnimationFrame -->",
+      "link": "/navigation/javascript/animation/requestAnimationFrame"
+    },
+    {
+      "text": "动画实现方式三：setInterval -->",
+      "link": "/navigation/javascript/animation/setInterval"
+    }
+  ],
+  "/navigation/javascript/browser-event/": [
+    {
+      "text": "事件代理 -->",
+      "link": "/navigation/javascript/browser-event/event-proxy"
+    },
+    {
+      "text": "事件监听 -->",
+      "link": "/navigation/javascript/browser-event/event"
+    },
+    {
+      "text": "事件默认行为 -->",
+      "link": "/navigation/javascript/browser-event/preventDefault"
+    },
+    {
+      "text": "stopImmediatePropagation -->",
+      "link": "/navigation/javascript/browser-event/stopImmediatePropagation"
+    },
+    {
+      "text": "stopPropagation -->",
+      "link": "/navigation/javascript/browser-event/stopProgapation"
+    }
+  ],
+  "/navigation/javascript/callback-hell/": [
+    {
+      "text": "async&&await */",
+      "link": "/navigation/javascript/callback-hell/async-await"
+    },
+    {
+      "text": "回调地狱 */",
+      "link": "/navigation/javascript/callback-hell/callback-hell"
+    },
+    {
+      "text": "回调地狱 */",
+      "link": "/navigation/javascript/callback-hell/callback-hell1"
+    },
+    {
+      "text": "Promise方法 */",
+      "link": "/navigation/javascript/callback-hell/promise-solution"
+    }
+  ],
+  "/navigation/javascript/canvas/": [
+    {
+      "text": "car",
+      "link": "/navigation/javascript/canvas/car/index"
+    },
+    {
+      "text": "image",
+      "link": "/navigation/javascript/canvas/image/index"
+    },
+    {
+      "text": "动画 -->",
+      "link": "/navigation/javascript/canvas/animotion"
+    },
+    {
+      "text": "圆弧 -->",
+      "link": "/navigation/javascript/canvas/arc"
+    },
+    {
+      "text": "圆进度条 -->",
+      "link": "/navigation/javascript/canvas/circleLoading"
+    },
+    {
+      "text": "绘制图片 -->",
+      "link": "/navigation/javascript/canvas/drawImage"
+    },
+    {
+      "text": "线格 -->",
+      "link": "/navigation/javascript/canvas/line-grid"
+    },
+    {
+      "text": "线 -->",
+      "link": "/navigation/javascript/canvas/line"
+    },
+    {
+      "text": "放大镜 -->",
+      "link": "/navigation/javascript/canvas/magnifier"
+    },
+    {
+      "text": "矩形 -->",
+      "link": "/navigation/javascript/canvas/rect"
+    },
+    {
+      "text": "文本 -->",
+      "link": "/navigation/javascript/canvas/text"
+    },
+    {
+      "text": "变换 -->",
+      "link": "/navigation/javascript/canvas/transform"
+    }
+  ],
+  "/navigation/javascript/compiler/": [
+    {
+      "text": "编译器",
+      "link": "/navigation/javascript/compiler/compiler"
+    }
+  ],
+  "/navigation/javascript/css-in-js/": [
+    {
+      "text": "styleComponent 中 css in js 的实现原理",
+      "link": "/navigation/javascript/css-in-js/theory"
+    }
+  ],
+  "/navigation/javascript/debounce/": [
+    {
+      "text": "debounce -->",
+      "link": "/navigation/javascript/debounce/debounce"
+    }
+  ],
+  "/navigation/javascript/mutation-observer/": [
+    {
+      "text": "mutation observer",
+      "link": "/navigation/javascript/mutation-observer/mutation-observer"
+    }
+  ],
+  "/navigation/javascript/traverse/": [
+    {
+      "text": "for...in 与 for...of的区别",
+      "link": "/navigation/javascript/traverse/for-in-of"
     }
   ],
   "/navigation/python/basic/": [
@@ -307,12 +441,6 @@
     {
       "text": "测试",
       "link": "/navigation/algorithms/basic/test"
-    }
-  ],
-  "/navigation/other/mixins/": [
-    {
-      "text": "mixins",
-      "link": "/navigation/other/mixins/test"
     }
   ]
 }

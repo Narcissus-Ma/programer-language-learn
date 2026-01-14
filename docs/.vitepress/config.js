@@ -26,9 +26,9 @@ export default {
       { text: "Python", link: "/navigation/python" },
       { text: "Java", link: "/navigation/java" },
       { text: "SQL", link: "/navigation/sql" },
-      { text: "practice", link: "/navigation/practice" },
-      { text: "algorithms", link: "/navigation/algorithms" },
-      { text: "other", link: "/navigation/other" },
+      { text: "Practice", link: "/navigation/practice" },
+      { text: "Algorithms", link: "/navigation/algorithms" },
+      { text: "Other", link: "/navigation/other" },
     ],
     sidebar: sidebarConfig,
     search: {

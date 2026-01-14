@@ -1,0 +1,6 @@
+{
+  "imgs": [
+    { "name": "car_body", "url": "../image/carWithoutWheel.png" },
+    { "name": "car_wheel", "url": "../image/Wheel.png" }
+  ]
+}
