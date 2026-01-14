@@ -1,0 +1,187 @@
+# 盒子居中的方法总结 -->
+
+## HTML/CSS 示例
+
+以下是HTML/CSS中盒子居中的方法总结 -->的示例代码：
+
+```html
+<!-- title: 盒子居中的方法总结 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>盒子居中的方法总结</title>
+    <style>
+      .container {
+        background-color: aliceblue;
+      }
+
+      .father {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        display: flex;
+        /* 水平居中 */
+        justify-content: center;
+        /* 垂直居中 */
+        align-items: center;
+      }
+
+      .son {
+        background-color: pink;
+        width: 100px;
+        height: 100px;
+      }
+
+      .father1 {
+        width: 400px;
+        height: 400px;
+        background-color: black;
+        position: relative;
+      }
+
+      .son1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto auto;
+      }
+
+      .father2 {
+        width: 400px;
+        height: 400px;
+        background-color: black;
+        position: relative;
+      }
+
+      .son2 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /* 不需要知道父盒子高度 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 15px;
+        background-color: powderblue;
+        /* translate的百分比是相对于自身元素的百分比 */
+        transform: translate(-50%, -50%);
+      }
+
+      .father3 {
+        width: 400px;
+        height: 400px;
+        background-color: black;
+        position: relative;
+      }
+
+      .son3 {
+        width: 100px;
+        height: 100px;
+        background-color: powderblue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 15px;
+        /* 自身盒子宽度的一半 */
+        margin-left: -50px;
+        margin-top: -50px;
+      }
+
+      .father4 {
+        width: 600px;
+        height: 500px;
+        background-color: pink;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      /* 子元素如果是img标签，父元素直接设置即可 */
+      .son4 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin: 0 auto;
+      }
+
+      button {
+        width: 400px;
+        height: 400px;
+        background-color: blueviolet;
+      }
+
+      .son5 {
+        width: 150px;
+        height: 150px;
+        background-color: burlywood;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>1.使用flex布局</h1>
+      <div class="father">
+        <div class="son"></div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>2.margin: auto 配合定位</h1>
+      <div class="father1">
+        <div class="son1"></div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>3.transform</h1>
+      <div class="father2">
+        <div class="son2"></div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>4.margin负边距</h1>
+      <div class="father3">
+        <div class="son3"></div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>5.table-cell</h1>
+      <div class="father4">
+        <div class="son4"></div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>6.button 居中</h1>
+      <h2>button 垂直方向自动居中</h2>
+      <button>
+        <div class="son5"></div>
+      </button>
+    </div>
+  </body>
+</html>
+
+```
+
+## 说明
+
+该示例展示了不同语言中盒子居中的方法总结 -->的基本用法和常见操作。
+
+### 主要功能
+
+- 请根据实际代码内容添加功能说明
+
+### 使用场景
+
+- 请根据实际代码内容添加使用场景
+
+## 相关链接
+
+- [返回首页](../index.md)

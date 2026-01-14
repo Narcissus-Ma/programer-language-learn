@@ -1,0 +1,85 @@
+<!-- title: BFC概念 -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>BFC概念</title>
+    <style>
+      .wrapper {
+        background: aliceblue;
+      }
+
+      .container {
+        /*  设置BFC */
+        overflow: hidden;
+      }
+
+      .cube {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        margin: 100px;
+      }
+
+      .parent {
+        border: 10px solid darkorange;
+        overflow: hidden;
+      }
+
+      .child {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        float: left;
+      }
+
+      .cube1 {
+        width: 100px;
+        height: 100px;
+        background-color: darkorange;
+        float: left;
+      }
+
+      .cube2 {
+        width: 200px;
+        height: 200px;
+        background-color: darkgray;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 
+    一，概念： block formatting context, 元素的一种属性， 带这种属性的元素相当于一块独立的区域
+    二，设置该属性的方法
+      1，浮动元素
+      2，定位元素
+      3，display设置
+      4，overflow(常用， 前面的方未能要么会脱离文档流要么会改变布局)
+      5，根元素
+    三，BFC的作用总体上是为了解决浮动布局引发的一系列问题
+   -->
+    <!-- 作用一：避免外边距重叠 -->
+    <div class="wrapper">
+      <h1>作用一：避免外边距重叠</h1>
+      <div class="container">
+        <div class="cube"></div>
+      </div>
+      <div class="cube"></div>
+    </div>
+    <div class="wrapper">
+      <h1>作用二：用于清除浮动</h1>
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <h1>作用三：阻止元素被浮动元素覆盖</h1>
+      <div class="cube1"></div>
+      <div class="cube2"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+# 左边宽度固定，右边自适应 -->
+
+## HTML/CSS 示例
+
+以下是HTML/CSS中左边宽度固定，右边自适应 -->的示例代码：
+
+```html
+<!-- title: 左边宽度固定，右边自适应 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>左边宽度固定，右边自适应</title>
+    <style>
+      .container {
+        width: 100%;
+        background-color: aliceblue;
+      }
+      .outer {
+        width: 100%;
+        background-color: yellow;
+      }
+      .outer2 {
+        position: relative;
+      }
+      .outer4 {
+        display: flex;
+        flex-direction: row;
+      }
+      .left {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      .left1 {
+        float: left;
+      }
+      .left3 {
+        position: absolute;
+      }
+      .right {
+        height: 200px;
+        background-color: blue;
+      }
+      .right2 {
+        position: absolute;
+        left: 200px;
+        top: 0;
+        right: 0;
+      }
+      .right3 {
+        margin-left: 200px;
+      }
+      .right4 {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>方法一： float</h1>
+      <div class="outer">
+        <!-- 浮动不会覆盖文字 图片 表单元素 -->
+        <div class="left left1">固定宽度</div>
+        <div class="right">自适应宽度</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>方法二： 定位</h1>
+      <div class="outer outer2">
+        <div class="left">固定宽度</div>
+        <div class="right right2">自适应宽度</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>方法三： 定位加边距</h1>
+      <div class="outer outer2">
+        <div class="left left3">固定宽度</div>
+        <div class="right right3">自适应宽度</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>方法四： 使用flex布局</h1>
+      <div class="outer outer4">
+        <div class="left">固定宽度</div>
+        <div class="right right4">自适应宽度</div>
+      </div>
+    </div>
+  </body>
+</html>
+
+```
+
+## 说明
+
+该示例展示了不同语言中左边宽度固定，右边自适应 -->的基本用法和常见操作。
+
+### 主要功能
+
+- 请根据实际代码内容添加功能说明
+
+### 使用场景
+
+- 请根据实际代码内容添加使用场景
+
+## 相关链接
+
+- [返回首页](../index.md)

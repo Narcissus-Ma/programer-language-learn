@@ -1,4 +1,4 @@
-# 多语言代码示例文档系统
+# 代码笔记
 
 一个基于VitePress的静态文档网站，用于展示和对比不同编程语言（JavaScript、Python、Java、SQL、HTML、CSS等）的代码示例和用法。
 

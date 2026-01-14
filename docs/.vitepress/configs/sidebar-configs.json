@@ -23,10 +23,74 @@
       "link": "/examples/js/object-manipulation"
     }
   ],
-  "/navigation/html-css/basic/": [
+  "/navigation/html-css/Animation/": [
     {
-      "text": "test",
-      "link": "/navigation/html-css/basic/test"
+      "text": "animation 实现loading效果 -->",
+      "link": "/navigation/html-css/Animation/loading"
+    }
+  ],
+  "/navigation/html-css/BFC/": [
+    {
+      "text": "BFC概念 -->",
+      "link": "/navigation/html-css/BFC/bfc"
+    },
+    {
+      "text": "行内元素float: left后是否变为块级元素 -->",
+      "link": "/navigation/html-css/BFC/float-inline"
+    },
+    {
+      "text": "清除浮动的几种方式 -->",
+      "link": "/navigation/html-css/BFC/floatClear"
+    }
+  ],
+  "/navigation/html-css/Others/": [
+    {
+      "text": "实现小于12px的字体效果 -->",
+      "link": "/navigation/html-css/Others/font"
+    },
+    {
+      "text": "边距重叠 -->",
+      "link": "/navigation/html-css/Others/marginCollapse"
+    }
+  ],
+  "/navigation/html-css/layout/": [
+    {
+      "text": "assets",
+      "link": "/navigation/html-css/layout/assets/index"
+    },
+    {
+      "text": "盒子居中的方法总结 -->",
+      "link": "/navigation/html-css/layout/center"
+    },
+    {
+      "text": "圣杯布局 -->",
+      "link": "/navigation/html-css/layout/cup"
+    },
+    {
+      "text": "左边宽度固定，右边自适应 -->",
+      "link": "/navigation/html-css/layout/doubleColumns"
+    },
+    {
+      "text": "流体布局 -->",
+      "link": "/navigation/html-css/layout/float"
+    },
+    {
+      "text": "img标签居中 -->",
+      "link": "/navigation/html-css/layout/imgCenter"
+    },
+    {
+      "text": "双飞翼布局 -->",
+      "link": "/navigation/html-css/layout/wing"
+    }
+  ],
+  "/navigation/html-css/viewScroll/": [
+    {
+      "text": "视差滚动实现方式一 -->",
+      "link": "/navigation/html-css/viewScroll/method1"
+    },
+    {
+      "text": "视差滚动实现方式二 -->",
+      "link": "/navigation/html-css/viewScroll/method2"
     }
   ],
   "/navigation/javascript/basic/": [
