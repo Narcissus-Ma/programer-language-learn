@@ -1,0 +1,59 @@
+<!-- title: vue mvvm 理论实现 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #myInput {
+      width: 400px;
+      height: 50px;
+      font-size: 40px;
+      color: red;
+    }
+    #contain {
+      margin-top: 20px;
+      width: 400px;
+      height: 200px;
+      border: 1px solid salmon;
+    }
+    .line {
+      /* width: 100px; */
+      margin-top: 10px;
+      height: 0.5px;
+      background-color: red;
+      /* color: red; */
+      /* transform: scaleY(0.5); */
+    }
+  </style>
+  <body>
+    <input id="myInput" type="text" />
+    <div id="contain"></div>
+    <div class="line"></div>
+    <script>
+      let text;
+      window.data = {};
+      let oIn = document.getElementById("myInput");
+      let oDiv = document.getElementById("contain");
+
+      oIn.addEventListener("input", function (e) {
+        text = e.target.value;
+        console.log(text);
+        window.data.customValue = text;
+      });
+
+      Object.defineProperty(window.data, "customValue", {
+        get() {
+          return "";
+        },
+        set(v) {
+          oDiv.innerHTML = v;
+        },
+      });
+      // vue3.0用的proxy Api      
+    </script>
+  </body>
+</html>

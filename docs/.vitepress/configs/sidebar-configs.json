@@ -227,10 +227,50 @@
       "link": "/navigation/javascript/mutation-observer/mutation-observer"
     }
   ],
+  "/navigation/javascript/nine-box-lottory/": [
+    {
+      "text": "九宫格抽奖 -->",
+      "link": "/navigation/javascript/nine-box-lottory/index"
+    }
+  ],
+  "/navigation/javascript/others/": [
+    {
+      "text": "随机生成生常体温",
+      "link": "/navigation/javascript/others/body-temperature"
+    },
+    {
+      "text": "数组扁平化",
+      "link": "/navigation/javascript/others/flat"
+    },
+    {
+      "text": "获取数据类型",
+      "link": "/navigation/javascript/others/get-type"
+    },
+    {
+      "text": "数组includes方法",
+      "link": "/navigation/javascript/others/includes"
+    },
+    {
+      "text": "时间戳格式化",
+      "link": "/navigation/javascript/others/time-stamp"
+    }
+  ],
+  "/navigation/javascript/throttle/": [
+    {
+      "text": "节流函数 -->",
+      "link": "/navigation/javascript/throttle/throttle"
+    }
+  ],
   "/navigation/javascript/traverse/": [
     {
       "text": "for...in 与 for...of的区别",
       "link": "/navigation/javascript/traverse/for-in-of"
+    }
+  ],
+  "/navigation/javascript/vue-mvvm-theory/": [
+    {
+      "text": "vue mvvm 理论实现 -->",
+      "link": "/navigation/javascript/vue-mvvm-theory/index"
     }
   ],
   "/navigation/python/basic/": [

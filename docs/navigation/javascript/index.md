@@ -8,4 +8,8 @@
 - [css-in-js](css-in-js/index.md)
 - [debounce](debounce/index.md)
 - [mutation-observer](mutation-observer/index.md)
+- [nine-box-lottory](nine-box-lottory/index.md)
+- [others](others/index.md)
+- [throttle](throttle/index.md)
 - [traverse](traverse/index.md)
+- [vue-mvvm-theory](vue-mvvm-theory/index.md)

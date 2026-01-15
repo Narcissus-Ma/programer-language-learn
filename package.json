@@ -11,6 +11,7 @@
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
     "generate": "node scripts/generate-docs.js",
+    "clean": "node scripts/clean-invalid-docs.js",
     "validate:code": "node scripts/validate-code.js",
     "deploy": "bash deploy.sh"
   },
