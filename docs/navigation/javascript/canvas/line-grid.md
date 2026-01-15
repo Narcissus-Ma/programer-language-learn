@@ -1,6 +1,7 @@
 # 线格 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/line-grid.html" height="auto" />
 
 以下是HTML/CSS中线格 -->的示例代码：
 

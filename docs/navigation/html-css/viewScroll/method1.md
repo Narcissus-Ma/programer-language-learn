@@ -1,6 +1,7 @@
 # 视差滚动实现方式一 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/method1.html" height="auto" />
 
 以下是HTML/CSS中视差滚动实现方式一 -->的示例代码：
 

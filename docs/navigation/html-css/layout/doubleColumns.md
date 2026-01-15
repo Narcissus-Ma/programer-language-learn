@@ -1,6 +1,7 @@
 # 左边宽度固定，右边自适应 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/doubleColumns.html" height="auto" />
 
 以下是HTML/CSS中左边宽度固定，右边自适应 -->的示例代码：
 

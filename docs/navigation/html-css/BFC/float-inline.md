@@ -1,6 +1,7 @@
 # 行内元素float: left后是否变为块级元素 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/float-inline.html" height="auto" />
 
 以下是HTML/CSS中行内元素float: left后是否变为块级元素 -->的示例代码：
 

@@ -1,6 +1,7 @@
 # img标签居中 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/imgCenter.html" height="auto" />
 
 以下是HTML/CSS中img标签居中 -->的示例代码：
 

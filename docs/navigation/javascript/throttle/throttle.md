@@ -1,6 +1,7 @@
 # 节流函数 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/throttle.html" height="auto" />
 
 以下是HTML/CSS中节流函数 -->的示例代码：
 

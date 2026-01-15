@@ -1,6 +1,7 @@
 # 实现小于12px的字体效果 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/font.html" height="auto" />
 
 以下是HTML/CSS中实现小于12px的字体效果 -->的示例代码：
 

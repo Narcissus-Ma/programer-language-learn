@@ -1,6 +1,7 @@
 # 文本 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/text.html" height="auto" />
 
 以下是HTML/CSS中文本 -->的示例代码：
 

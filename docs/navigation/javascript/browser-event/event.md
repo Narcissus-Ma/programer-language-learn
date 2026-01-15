@@ -1,6 +1,7 @@
 # 事件监听 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/event.html" height="auto" />
 
 以下是HTML/CSS中事件监听 -->的示例代码：
 

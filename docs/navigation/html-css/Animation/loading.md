@@ -1,6 +1,7 @@
 # animation 实现loading效果 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/loading.html" height="auto" />
 
 以下是HTML/CSS中animation 实现loading效果 -->的示例代码：
 
@@ -17,7 +18,7 @@
   <style>
     body {
       display: flex;
-      height: 100vh;
+      height: 100%;
       justify-content: center;
       align-items: center;
       background-color: #222;

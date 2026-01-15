@@ -75,17 +75,27 @@ programer-language-learn/
 │   │   ├── python/          # Python示例
 │   │   ├── java/            # Java示例
 │   │   ├── sql/             # SQL示例
-│   │   ├── html-css/        # HTML/CSS示例
-│   │   └── shared/          # 跨语言通用示例
+│   │   └── html-css/        # HTML/CSS示例
 │   ├── guides/              # 使用指南
 │   ├── comparisons/         # 语言对比文档
+│   ├── navigation/          # 分类导航文档
+│   │   ├── algorithms/      # 算法示例
+│   │   ├── html-css/        # HTML/CSS教程
+│   │   ├── java/            # Java教程
+│   │   ├── javascript/      # JavaScript教程
+│   │   ├── other/           # 其他技术
+│   │   ├── practice/        # 编程练习
+│   │   └── python/          # Python教程
 │   ├── index.md             # 首页
 │   └── .vitepress/          # VitePress配置
-│       ├── config.js        # 主配置文件
-│       └── theme/           # 自定义主题
-│           └── index.js
+│       ├── configs/         # 配置文件目录
+│       │   └── sidebar-configs.json  # 侧边栏配置
+│       ├── theme/           # 自定义主题
+│       │   └── index.js
+│       └── config.js        # 主配置文件
 ├── scripts/                 # 自动化脚本
 │   ├── generate-docs.js     # 自动生成文档脚本
+│   ├── clean-invalid-docs.js # 清理无效文档脚本
 │   └── validate-code.js     # 代码验证脚本
 ├── deploy.sh                # 一键部署脚本
 ├── package.json             # 项目依赖和脚本
@@ -99,6 +109,44 @@ programer-language-learn/
 - [列表遍历](docs/comparisons/list-traversal.md) - 不同语言遍历列表的方法对比
 - [字符串处理](docs/comparisons/string-manipulation.md) - 字符串操作方法对比
 - [错误处理](docs/comparisons/error-handling.md) - 错误处理机制对比
+
+### 分类导航
+
+#### 算法与数据结构
+- [基础算法](docs/navigation/algorithms/basic/)
+
+#### HTML/CSS
+- [动画效果](docs/navigation/html-css/Animation/)
+- [BFC布局](docs/navigation/html-css/BFC/)
+- [布局技巧](docs/navigation/html-css/layout/)
+- [视图滚动](docs/navigation/html-css/viewScroll/)
+
+#### JavaScript
+- [动画实现](docs/navigation/javascript/animation/)
+- [浏览器事件](docs/navigation/javascript/browser-event/)
+- [异步编程](docs/navigation/javascript/callback-hell/)
+- [Canvas绘图](docs/navigation/javascript/canvas/)
+- [代码优化](docs/navigation/javascript/code-for-js/)
+- [编译器](docs/navigation/javascript/compiler/)
+- [防抖节流](docs/navigation/javascript/debounce/)
+- [事件监听](docs/navigation/javascript/mutation-observer/)
+
+#### Java
+- [基础语法](docs/navigation/java/basic/)
+
+#### Python
+- [基础语法](docs/navigation/python/basic/)
+
+#### 编程练习
+- [类与对象](docs/navigation/practice/class/)
+- [字典操作](docs/navigation/practice/dictionary/)
+- [列表操作](docs/navigation/practice/list/)
+- [数学运算](docs/navigation/practice/math/)
+- [字符串处理](docs/navigation/practice/string/)
+- [工具函数](docs/navigation/practice/utils/)
+
+#### 其他技术
+- [混合编程](docs/navigation/other/mixins/)
 
 ### 代码示例
 
@@ -132,10 +180,25 @@ programer-language-learn/
 ### 自动生成文档
 
 ```bash
-npm run generate:docs
+npm run generate
 ```
 
-根据代码文件自动生成Markdown文档。
+根据代码文件自动生成Markdown文档和侧边栏配置。
+
+### 清理无效文档
+
+```bash
+# 仅扫描无效文档
+npm run clean -- --scan
+
+# 清理并备份无效文档
+npm run clean -- --clean
+
+# 直接清理无效文档（不备份）
+npm run clean -- --clean --no-backup
+```
+
+扫描并清理包含二进制内容或损坏的无效文档。
 
 ### 验证代码语法
 

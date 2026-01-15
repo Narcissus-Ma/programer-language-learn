@@ -1,6 +1,7 @@
 # stopImmediatePropagation -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/stopImmediatePropagation.html" height="auto" />
 
 以下是HTML/CSS中stopImmediatePropagation -->的示例代码：
 

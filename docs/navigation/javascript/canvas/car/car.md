@@ -1,6 +1,7 @@
 # 汽车 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/car.html" height="auto" />
 
 以下是HTML/CSS中汽车 -->的示例代码：
 

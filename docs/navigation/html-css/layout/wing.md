@@ -1,6 +1,7 @@
 # 双飞翼布局 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/wing.html" height="auto" />
 
 以下是HTML/CSS中双飞翼布局 -->的示例代码：
 

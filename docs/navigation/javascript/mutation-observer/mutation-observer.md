@@ -1,6 +1,7 @@
 # mutation observer
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/mutation-observer.html" height="auto" />
 
 以下是HTML/CSS中mutation observer的示例代码：
 

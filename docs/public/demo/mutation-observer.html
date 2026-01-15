@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MutationObserver</title>
+    <style>
+      #parent {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      #child {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+      }
+      span {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child" onclick="handleClick()"></div>
+    </div>
+    <script>
+      function handleClick() {
+        const element = document.getElementById("child");
+        if (element.style.backgroundColor == "blue") {
+          element.style.backgroundColor = "yellow";
+          const span = document.createElement("span");
+          element.append(span);
+        } else {
+          element.style.backgroundColor = "blue";
+        }
+      }
+
+      // MutationObserver的作用是监听子元素的变化
+
+      function callback(mutationList, observer) {
+        mutationList.forEach((mutation) => {
+          switch (mutation.type) {
+            case "childList":
+              // 关注mutation.addedNodes和mutation.removedNodes属性
+              // console.log(mutation.addedNodes);
+              console.log("====childList====", mutation);
+              break;
+            case "attributes":
+              // 关注mutation.target, mutation.attributeName, mutation.oldValue
+              console.log("====attributes====", mutation);
+              break;
+          }
+        });
+      }
+      var targetNode = document.querySelector("#parent");
+      var observerOptions = {
+        childList: true,
+        attributes: true,
+        subtree: true, // 忽略或设置为false，只观察父节点的更改
+      };
+      var observer = new MutationObserver(callback);
+      observer.observe(targetNode, observerOptions);
+    </script>
+  </body>
+</html>

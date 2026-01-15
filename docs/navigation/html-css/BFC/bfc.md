@@ -1,6 +1,7 @@
 # BFC概念 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/bfc.html" height="auto" />
 
 以下是HTML/CSS中BFC概念 -->的示例代码：
 

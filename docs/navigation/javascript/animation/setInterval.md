@@ -1,6 +1,7 @@
 # 动画实现方式三：setInterval -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/setInterval.html" height="auto" />
 
 以下是HTML/CSS中动画实现方式三：setInterval -->的示例代码：
 

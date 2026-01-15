@@ -1,6 +1,7 @@
 # 动画实现方式二：requestAnimationFrame -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/requestAnimationFrame.html" height="auto" />
 
 以下是HTML/CSS中动画实现方式二：requestAnimationFrame -->的示例代码：
 

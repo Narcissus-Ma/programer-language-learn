@@ -1,6 +1,7 @@
 # 清除浮动的几种方式 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/floatClear.html" height="auto" />
 
 以下是HTML/CSS中清除浮动的几种方式 -->的示例代码：
 

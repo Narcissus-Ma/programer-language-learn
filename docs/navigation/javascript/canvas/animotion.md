@@ -1,6 +1,7 @@
 # 动画 -->
 
 ## HTML/CSS 示例
+<HtmlPreview src="/programer-language-learn/demo/animotion.html" height="auto" />
 
 以下是HTML/CSS中动画 -->的示例代码：
 
