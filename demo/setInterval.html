@@ -1,0 +1,30 @@
+<!-- title: 动画实现方式三：setInterval -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定时器思路</title>
+    <style>
+        #symbolExg {
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="symbolExg"></div>
+    <script>
+        const  element = document.getElementById('symbolExg');
+        let flag = true;
+        let left = 0;
+        setInterval(() => {
+            left === 0? (flag=true): left === 100 ? (flag = false) : "";
+            flag ? (element.style.left = `${left++}px`) : (element.style.left = `${left--}px`);
+        }, 1000 / 60);
+    </script>
+</body>
+</html>

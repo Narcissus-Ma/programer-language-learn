@@ -1,0 +1,33 @@
+<!-- title: 动画实现方式一：CSS 动画 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animationByCss</title>
+    <style>
+      #symbolExg {
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        position: absolute;
+        animation: mymove 5s infinite;
+      }
+      @keyframes mymove {
+        0% {
+          left: 0px;
+        }
+        50% {
+          left: 100%;
+        }
+        100% {
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="symbolExg"></div>
+  </body>
+</html>

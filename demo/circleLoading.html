@@ -1,0 +1,72 @@
+<!-- title: 圆进度条 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+    <style>
+      .canvas {
+        border: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas width="500" height="500" class="canvas">
+      您的浏览器不支持canvas,请升级
+    </canvas>
+    <script>
+      const cvs = document.querySelector(".canvas");
+      const cxt = cvs.getContext("2d");
+
+      cvs.width = window.innerWidth;
+      cvs.height = window.innerHeight;
+
+      const midx = cvs.width / 2;
+      const midy = cvs.height / 2;
+
+      //   外圈
+      function outRing() {
+        cxt.beginPath();
+        cxt.fillStyle = "yellow";
+        cxt.strokeStyle = "blue";
+        cxt.lineWidth = 20;
+        cxt.arc(midx, midy, 100, 0, Math.PI * 2);
+        cxt.fill();
+        cxt.stroke();
+      }
+
+      //   加载圈
+      let angle = 0;
+      function loadingRing() {
+        cxt.beginPath();
+        cxt.strokeStyle = "gray";
+        cxt.lineWidth = 20;
+        cxt.arc(midx, midy, 100, 0, (Math.PI * angle) / 180);
+        cxt.stroke();
+
+        angle++;
+
+        // 百分比
+        cxt.beginPath();
+        const text = `${Math.floor((100 / 360) * angle)}%`;
+        cxt.font = "20px serif";
+        cxt.fillStyle = "red";
+        cxt.textAlign = "center";
+        cxt.textBaseline = "middle";
+        cxt.fillText(text,midx,midy);
+      }
+
+      function play() {
+        cxt.clearRect(0, 0, cvs.width, cvs.height);
+        outRing();
+        loadingRing();
+        if (angle === 361) return;
+        window.requestAnimationFrame(play);
+      }
+
+      play();
+    </script>
+  </body>
+</html>

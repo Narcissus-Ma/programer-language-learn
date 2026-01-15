@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as l,ah as e}from"./chunks/framework.BenYc72Q.js";const k=JSON.parse('{"title":"代码笔记","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),n={name:"index.md"};function t(h,a,r,p,o,d){return l(),i("div",null,[...a[0]||(a[0]=[e("",18)])])}const m=s(n,[["render",t]]);export{k as __pageData,m as default};
