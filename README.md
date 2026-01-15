@@ -25,7 +25,7 @@
 ### 1. 克隆仓库
 
 ```bash
-git clone https://gitee.com/Narcissus-ma/programer-language-learn.git
+git clone https://github.com/Narcissus-Ma/programer-language-learn.git
 cd programer-language-learn
 ```
 
@@ -164,7 +164,7 @@ npm run validate:code
 
 如有问题或建议，欢迎通过以下方式联系：
 
-- GitHub Issues：https://gitee.com/Narcissus-ma/programer-language-learn/issues
+- GitHub Issues：https://github.com/Narcissus-Ma/programer-language-learn/issues
 
 ## 🌟 致谢
 

@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
+    "postbuild": "echo /programer-language-learn/* /:splat 200 > docs/.vitepress/dist/_redirects",
     "preview": "vitepress preview docs",
     "generate": "node scripts/generate-docs.js",
     "clean": "node scripts/clean-invalid-docs.js",

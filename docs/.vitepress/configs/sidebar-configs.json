@@ -203,6 +203,116 @@
       "link": "/navigation/javascript/canvas/transform"
     }
   ],
+  "/navigation/javascript/code-for-js/": [
+    {
+      "text": "实现深拷贝的方法 Json序列化, lodash, 手写递归实现",
+      "link": "/navigation/javascript/code-for-js/clone-deep"
+    },
+    {
+      "text": "实现一个compose函数",
+      "link": "/navigation/javascript/code-for-js/compose"
+    },
+    {
+      "text": "函数柯里化",
+      "link": "/navigation/javascript/code-for-js/currying"
+    },
+    {
+      "text": "把一个 DOM 节点输出 JSON 的格式",
+      "link": "/navigation/javascript/code-for-js/dom2json"
+    },
+    {
+      "text": "数组扁平化的三种解法",
+      "link": "/navigation/javascript/code-for-js/flatter"
+    },
+    {
+      "text": "实现一个拼手气抢红包算法",
+      "link": "/navigation/javascript/code-for-js/get-red-package"
+    },
+    {
+      "text": "大数相加",
+      "link": "/navigation/javascript/code-for-js/large-number"
+    },
+    {
+      "text": "实现一个LazyMan类",
+      "link": "/navigation/javascript/code-for-js/lazyman"
+    },
+    {
+      "text": "把一个列表转换为树结构",
+      "link": "/navigation/javascript/code-for-js/list2tree"
+    },
+    {
+      "text": "利用 XMLHttpRequest 手写 AJAX 实现",
+      "link": "/navigation/javascript/code-for-js/my-ajax"
+    },
+    {
+      "text": "手写call apply bind",
+      "link": "/navigation/javascript/code-for-js/my-call"
+    },
+    {
+      "text": "实现一个 instanceof 方法",
+      "link": "/navigation/javascript/code-for-js/my-instanceof"
+    },
+    {
+      "text": "实现一个 new 操作符",
+      "link": "/navigation/javascript/code-for-js/my-new"
+    },
+    {
+      "text": "手写Promise及其相关方法",
+      "link": "/navigation/javascript/code-for-js/my-promise"
+    },
+    {
+      "text": "实现一个 reduce 方法",
+      "link": "/navigation/javascript/code-for-js/my-reduce"
+    },
+    {
+      "text": "数字转字符串",
+      "link": "/navigation/javascript/code-for-js/num2string"
+    },
+    {
+      "text": "实现一个对象的flatten方法",
+      "link": "/navigation/javascript/code-for-js/obj-flatten"
+    },
+    {
+      "text": "实现一个 Object.is 方法",
+      "link": "/navigation/javascript/code-for-js/object-is"
+    },
+    {
+      "text": "发布订阅模式",
+      "link": "/navigation/javascript/code-for-js/pub-sub"
+    },
+    {
+      "text": "简单异步调度器的实现",
+      "link": "/navigation/javascript/code-for-js/scheduler"
+    },
+    {
+      "text": "setTimeout 实现 setInterval",
+      "link": "/navigation/javascript/code-for-js/setTimeout-to-setInterval"
+    },
+    {
+      "text": "渲染百万条结构简单的大数据时 怎么使用分片思想优化渲染",
+      "link": "/navigation/javascript/code-for-js/slice-render"
+    },
+    {
+      "text": "实现模板字符串解析功能",
+      "link": "/navigation/javascript/code-for-js/template-parser"
+    },
+    {
+      "text": "树形结构转成列表",
+      "link": "/navigation/javascript/code-for-js/tree2list"
+    },
+    {
+      "text": "实现一个react 的useState",
+      "link": "/navigation/javascript/code-for-js/useState"
+    },
+    {
+      "text": "JSON 格式的虚拟 Dom 怎么转换成真实 Dom",
+      "link": "/navigation/javascript/code-for-js/vdom2rdom"
+    },
+    {
+      "text": "版本号排序的方法",
+      "link": "/navigation/javascript/code-for-js/version-sort"
+    }
+  ],
   "/navigation/javascript/compiler/": [
     {
       "text": "编译器",

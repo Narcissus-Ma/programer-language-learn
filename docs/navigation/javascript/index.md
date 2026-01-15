@@ -4,6 +4,7 @@
 - [browser-event](browser-event/index.md)
 - [callback-hell](callback-hell/index.md)
 - [canvas](canvas/index.md)
+- [code-for-js](code-for-js/index.md)
 - [compiler](compiler/index.md)
 - [css-in-js](css-in-js/index.md)
 - [debounce](debounce/index.md)
