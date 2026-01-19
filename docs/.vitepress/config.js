@@ -18,6 +18,9 @@ export default {
   description: "代码笔记",
   base: "/programer-language-learn/",
   ignoreDeadLinks: true,
+  head: [
+    ['link', { rel: 'icon', href: '/programer-language-learn/favicon.ico' }]
+  ],
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },
