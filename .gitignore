@@ -16,6 +16,9 @@ docs/.vitepress/dist/
 docs/.vitepress/cache/
 docs-backup/
 
+# Java compilation output
+*.class
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
